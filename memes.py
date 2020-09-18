@@ -7,7 +7,7 @@ error = 0xB22222
 success = 0x207325
 
 def distracted_boyfriend(message):
-	image = Image.open('/Users/jack/repos/memery/templates/boyfriend.jpg')
+	image = Image.open('templates/boyfriend.jpg')
 
 	color = 'rgb(0, 0, 0)' # black color
 	stroke = 'rgb(255,255,255)'
@@ -21,7 +21,7 @@ def distracted_boyfriend(message):
 
 	draw = ImageDraw.Draw(image)
 
-	font = ImageFont.truetype('/Users/jack/Downloads/Roboto[wdth,wght].ttf', size=base_font_size)
+	font = ImageFont.truetype('fonts/Roboto[wdth,wght].ttf', size=base_font_size)
 
 
 	# draw the messages on the background
@@ -39,7 +39,7 @@ def distracted_boyfriend(message):
 
 
 def whatcat(message):
-	image = Image.open('/Users/jack/repos/memery/templates/whatcat.jpg')
+	image = Image.open('templates/whatcat.jpg')
 
 	color = 'rgb(0, 0, 0)'
 	stroke = 'rgb(255,255,255)'
@@ -74,7 +74,7 @@ def whatcat(message):
 
 	draw = ImageDraw.Draw(image)
 
-	font = ImageFont.truetype('/Users/jack/Downloads/Roboto[wdth,wght].ttf', size=base_font_size)
+	font = ImageFont.truetype('fonts/Roboto[wdth,wght].ttf', size=base_font_size)
 
 
 	# draw the messages on the background
@@ -88,7 +88,7 @@ def whatcat(message):
 
 
 def two_buttons(message):
-	image = Image.open('/Users/jack/repos/memery/templates/two_buttons.jpg')
+	image = Image.open('templates/two_buttons.jpg')
 
 	color = 'rgb(0, 0, 0)' # black color
 	stroke = 'rgb(255,255,255)'
@@ -102,7 +102,7 @@ def two_buttons(message):
 
 	draw = ImageDraw.Draw(image)
 
-	font = ImageFont.truetype('/Users/jack/Downloads/Roboto[wdth,wght].ttf', size=base_font_size)
+	font = ImageFont.truetype('fonts/Roboto[wdth,wght].ttf', size=base_font_size)
 
 
 	# draw the messages on the background
