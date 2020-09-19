@@ -119,6 +119,38 @@ def two_buttons(message):
 	image.save("output/two_buttons.jpg")
 
 
+def handshake(message):
+	image = Image.open('templates/handshake.jpg')
+
+	color = 'rgb(0, 0, 0)' # black color
+	stroke = 'rgb(255,255,255)'
+	stroke_width = 3
+	base_font_size = 35
+	message_content = message.content.split("-")
+
+	left_arm = message_content[1]
+	right_arm = message_content[2]
+	hands = message_content[3]
+
+	draw = ImageDraw.Draw(image)
+
+	font = ImageFont.truetype('fonts/Roboto[wdth,wght].ttf', size=base_font_size)
+
+	# draw the messages on the background
+	(x, y) = (25, 300)
+	draw.text((x, y), left_arm, fill=color, font=font, stroke_width=stroke_width, stroke_fill=stroke)
+
+	(x, y) = (700, 250)
+	draw.text((x, y), right_arm, fill=color, font=font, stroke_width=stroke_width, stroke_fill=stroke)
+
+	(x, y) = (300, 100)
+	draw.text((x, y), hands, fill=color, font=font, stroke_width=stroke_width, stroke_fill=stroke)
+
+	# save the edited image
+	image.save("output/handshake.jpg")
+
+
+
 def give_help():
 	embed = discord.Embed(description="Supported Memes", color=success)
 	embed.add_field(name="Distracted Boyfriend", value="`!bf -<boyfriend> -<girlfriend> -<other girl>`", inline = True)

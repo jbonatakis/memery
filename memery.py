@@ -15,23 +15,28 @@ if __name__ == "__main__":
 		if message.author == client.user:
 			return
 	
-		if message.content.startswith('!bf '):
+		elif message.content.startswith('!bf '):
 
 			distracted_boyfriend(message)
 
 			await message.channel.send(file=discord.File('output/boyfriend.jpg'))
 		
-		if message.content.startswith("!whatcat "):
+		elif message.content.startswith("!whatcat "):
 			whatcat(message)
 
 			await message.channel.send(file=discord.File('output/whatcat.jpg'))
 
-		if message.content.startswith("!buttons "):
+		elif message.content.startswith("!buttons "):
 			two_buttons(message)
 
 			await message.channel.send(file=discord.File('output/two_buttons.jpg'))
 
-		if message.content.startswith("!meme help"):
+		elif message.content.startswith('!handshake '):
+			handshake(message)
+
+			await message.channel.send(file=discord.File('output/handshake.jpg'))
+
+		elif message.content.startswith("!meme help"):
 			embed = give_help()
 
 			await message.channel.send(embed=embed)
