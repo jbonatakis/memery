@@ -152,9 +152,10 @@ def handshake(message):
 
 
 def give_help():
-	embed = discord.Embed(description="Supported Memes", color=success)
-	embed.add_field(name="Distracted Boyfriend", value="`!bf -<boyfriend> -<girlfriend> -<other girl>`", inline = True)
-	embed.add_field(name="Two Buttons", value="`!buttons -<first button> -<second button> -<man>`", inline = True)
-	embed.add_field(name="Woman Yelling at Cat", value="`!whatcat -<woman> -<cat>`", inline = True)
+        embed = discord.Embed(description="Supported Memes", color=success)
+        embed.add_field(name="Distracted Boyfriend", value="`!bf -<boyfriend> -<girlfriend> -<other girl>`", inline = True)
+        embed.add_field(name="Two Buttons", value="`!buttons -<first button> -<second button> -<man>`", inline = True)
+        embed.add_field(name="Woman Yelling at Cat", value="`!whatcat -<woman> -<cat>`", inline = True)
+        embed.add_field(name="Interracial Handshake", value="`!handshake -<left arm> -<right arm> <hands>`", inline= True)
 
-	return embed
+        return embed
